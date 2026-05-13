@@ -55,9 +55,9 @@ export const MOCK_PLAYERS: PlayerData[] = [
     stats: { ppg: 28.7, apg: 6.7, rpg: 3.6 },
     marketConfig: {
       coinName: '$JB11',
-      tokenCA: 'placeholder_ca',
-      tradeUrl: 'https://dexscreener.com',
-      twitterUrl: 'https://twitter.com/jalenbrunson1',
+      tokenCA: 'Hgq1Yu1bJuP9RmHXax1b7ukKe9KGiaejm56itUZFpump',
+      tradeUrl: 'https://pump.fun/coin/Hgq1Yu1bJuP9RmHXax1b7ukKe9KGiaejm56itUZFpump',
+      twitterUrl: 'https://x.com/GME_pf/status/2054492047168733498',
       telegramUrl: 'https://t.me/placeholder',
       websiteUrl: 'https://jalenbrunson.com'
     },
