@@ -13,8 +13,17 @@ export function Layout() {
   const COIN_ADDRESS = "coming";
 
   return (
-    <div className="min-h-screen bg-[#020617] text-white selection:bg-primary/30 flex flex-col font-sans">
-      <header className="sticky top-0 z-50 w-full h-[70px] flex items-center justify-between border-b border-white/5 bg-[#0a0e1a]/60 backdrop-blur-xl px-4 md:px-10">
+    <div 
+      className="min-h-screen text-white selection:bg-primary/30 flex flex-col font-sans"
+      style={{
+        backgroundImage: `url('https://raw.githubusercontent.com/heil-kaizen/hoopers/main/hoopersbackgroun.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <header className="sticky top-0 z-50 w-full h-[70px] flex items-center justify-between border-b border-white/5 bg-black/40 backdrop-blur-xl px-4 md:px-10">
         <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
             <span className="font-bold text-2xl tracking-tighter uppercase italic">Hooper<span className="text-[#ef4444]">MARKET</span></span>
@@ -60,7 +69,7 @@ export function Layout() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-white/5 bg-[#020617] py-12 mt-auto">
+      <footer className="border-t border-white/5 bg-black/60 backdrop-blur-md py-12 mt-auto">
         <div className="container mx-auto px-4 justify-center text-center">
           <p className="text-white/30 font-bold uppercase tracking-[0.3em] text-[9px] mb-4">HOOPER MARKET</p>
           <p className="text-[10px] text-white/10 max-w-xs mx-auto leading-relaxed">
