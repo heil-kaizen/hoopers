@@ -16,7 +16,7 @@ export function Layout() {
     <div 
       className="min-h-screen text-white selection:bg-primary/30 flex flex-col font-sans"
       style={{
-        backgroundImage: `url('https://raw.githubusercontent.com/heil-kaizen/hoopers/main/hoopersbackgroun.jpg')`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), url('https://raw.githubusercontent.com/heil-kaizen/hoopers/main/hoopersbackgroun.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
