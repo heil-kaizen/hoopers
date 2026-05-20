@@ -36,7 +36,7 @@ export function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 border-b border-white/5 bg-[#0a0e1a]">
+      <section className="relative pt-16 pb-20 border-b border-white/5 bg-black/40 backdrop-blur-sm">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.05)_0%,transparent_70%)]" />
         
         <div className="container relative z-10 mx-auto px-4 max-w-7xl">
@@ -73,8 +73,8 @@ export function Home() {
       </section>
 
       {/* Ticker Section */}
-      <div className="relative h-10 bg-[#0a0e1a] flex items-center text-[12px] border-b border-white/5 overflow-hidden whitespace-nowrap">
-        <div className="relative z-10 bg-white text-black pl-4 pr-6 md:pl-10 md:pr-8 h-full flex items-center font-bold uppercase tracking-wider shrink-0 whitespace-nowrap">Market Alerts:</div>
+      <div className="relative h-10 bg-black/60 backdrop-blur-md flex items-center text-[12px] border-b border-white/5 overflow-hidden whitespace-nowrap">
+        <div className="relative z-10 bg-white/10 text-white pl-4 pr-6 md:pl-10 md:pr-8 h-full flex items-center font-bold uppercase tracking-wider shrink-0 whitespace-nowrap border-r border-white/5 backdrop-blur-md">Market Alerts:</div>
         <div className="flex gap-8 animate-marquee pl-10">
            {visiblePlayers.map(p => (
              <TickerItem key={p.id} player={p} />
@@ -83,7 +83,7 @@ export function Home() {
       </div>
 
       {/* Roster / Market Grid Section */}
-      <section className="py-12 relative bg-[#05070a]">
+      <section className="py-12 relative bg-transparent">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="flex flex-col md:flex-row items-center justify-between mb-8">
             <h2 className="text-xl font-bold uppercase tracking-wide">Featured Market</h2>
