@@ -52,8 +52,8 @@ export function PlayerDetail() {
   const isUp = priceChange && priceChange > 0;
 
   return (
-    <div className="min-h-screen bg-background pb-20">
-      <div className="relative pt-8 pb-16 overflow-hidden border-b border-white/5 bg-[#0a0e1a]">
+    <div className="min-h-screen bg-transparent pb-20">
+      <div className="relative pt-8 pb-16 overflow-hidden border-b border-white/5 bg-black/40 backdrop-blur-md">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_0%,transparent_70%)]" />
         
         <div className="container relative z-10 mx-auto px-4 max-w-7xl">
@@ -121,7 +121,7 @@ export function PlayerDetail() {
               </div>
             </div>
             
-            <div className="w-full md:w-auto p-6 rounded-2xl bg-gradient-to-br from-[#161b2a] to-[#0a0e1a] border border-white/5 shadow-xl self-stretch flex flex-col justify-between hidden md:flex min-w-[250px]">
+            <div className="w-full md:w-auto p-6 rounded-2xl bg-black/40 backdrop-blur-md border border-white/5 shadow-xl self-stretch flex flex-col justify-between hidden md:flex min-w-[250px]">
               <span className="text-[11px] text-[#ef4444] font-bold uppercase tracking-widest mb-4 block">Season Stats</span>
               <div className="grid grid-cols-1 gap-4">
                 <div className="flex justify-between items-center border-b border-white/5 pb-3">
@@ -145,7 +145,7 @@ export function PlayerDetail() {
       {/* Market Section */}
       <div className="container mx-auto px-4 max-w-2xl pt-8 z-20">
         <div className="grid grid-cols-1 gap-6">
-          <Card className="bg-gradient-to-br from-[#161b2a] to-[#0a0e1a] border border-white/5 shadow-2xl overflow-hidden rounded-2xl">
+          <Card className="bg-black/60 backdrop-blur-md border border-white/5 shadow-2xl overflow-hidden rounded-2xl">
             <div className="p-6 border-b border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-center gap-4">
                 {loading ? (
