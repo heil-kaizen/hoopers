@@ -22,7 +22,7 @@ export function PlayerCard({ player }: PlayerCardProps) {
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ ease: "easeOut", duration: 0.2 }}
-      className="relative group rounded-2xl overflow-hidden bg-gradient-to-br from-[#161b2a] to-[#0a0e1a] border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/30 flex flex-col"
+      className="relative group rounded-2xl overflow-hidden bg-black/50 backdrop-blur-md border border-white/10 shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:border-white/30 flex flex-col"
     >
       {/* Glossy overlay effect */}
       <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] bg-[linear-gradient(45deg,transparent_45%,rgba(255,255,255,0.05)_50%,transparent_55%)] pointer-events-none" />
